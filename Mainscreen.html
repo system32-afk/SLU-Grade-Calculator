@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Looks.css">
+        <title>Document</title>
+</head>
+<body>
+    <div id="title">
+    <h1>SLU Grade Calculator</h1>
+    <h3>Calculate your grade per subject</h3>
+</div>
+
+    <div id = passing_calculator>
+        <h1>
+            Calcuate Passing grade
+        </h1>
+        <h2>
+            calculate the minimum passing score for a given activity.
+        </h2>
+
+        <div id="passing-grid">
+            <h1>
+                Total
+            </h1>
+            <h1>
+                Passing percentage
+            </h1>
+
+            <input type="number" class="PC-Input" id="total" placeholder="Total">
+            <input type="number" class="PC-Input" id="PassPercent" placeholder="Percentage">
+        </div>
+
+        <button id="estimateBTN" onclick="EstimatePassing()">Estimate</button>
+
+        
+
+    </div>
+
+
+    <div id="grade_paramaters">
+        <h1 id="GP_Header">
+            Set Grade paramaters
+        </h1>
+        <h2 id="GP_Subheader">
+            Add subcategories (Quizzes, activities, Assignments etc...) and their percentage based on the syllabus
+        </h2>
+
+        <div id="GP_GRID">
+        <div id="Class Standings">
+
+
+            <div class="GP_PARAM_Header">
+                <H1>
+                    Class Standing
+                </H1>
+                <input type = "number" class="percents" placeholder="Percentage">
+            </div>
+
+            <div class="GP_Params">
+                <div id="CS_subcategory">
+
+                <div class="buttonContainer">
+                <button class="addSubCategory" onclick="addSubcategories('CS_subcategory')">Add Subcategory</button>
+                </div>
+                
+                
+            </div>
+            </div>
+            
+        </div>
+
+        <div id="Examinations">
+
+
+            <div class="GP_PARAM_Header">
+                <H1>
+                    Examinations
+                </H1>
+                <input type = "number" class="percents" placeholder="Percentage">
+            </div>
+            <div class="GP_Params">
+                <div id="EX_subcategory">
+                    <div class="buttonContainer">
+                    <button class="addSubCategory" onclick="addSubcategories('EX_subcategory')">Add Subcategory</button>
+                    </div>
+                    
+                    
+                </div>
+            </div>
+        </div>
+        </div>
+        
+    </div>
+
+
+    <div id="Calculate-grades">
+        <h1>Calculate Grade</h1>
+        <h2>Set the activity name, activity type (Quiz, Exam, or homework), Score, and total</h2>
+
+    <div id="CAL_headers">
+        <h2>Activity name</h2>
+        <h2>Activity type</h2>
+        <h2>score</h2>
+        <h2>Total</h2>
+    </div>
+
+    <div id="Activities">
+
+    <div id = "CAL-btnContainer">
+        <button id="addActivity" onclick="addActivity()">Add Activity</button>
+        <button id="Calculate" onclick="CalculateGrade()">Calculate</button>
+    </div>    
+
+    </div>
+    
+    </div>
+
+    <footer id="feedback-section">
+    <h1>Feedback & Improvements</h1>
+    <p>
+        Have suggestions, found a bug, or are there any inaccuracies?  <br>
+        I’d love to hear how this calculator can be improved. <br> 
+        Please send me an email!
+    </p>
+    <div class="feedback-actions">   
+         <a href="mailto:johngabrielsalamera[at]gmail[dot]com" class="feedback-link" title="Send me feedback via email">
+    📧 johngabrielsalamera@gmail.com
+</a>
+
+
+        <a href="https://github.com/yourusername/your-repo-name"
+           target="_blank"
+           class="feedback-link">
+            📘 View Documentation / Source Code
+        </a>
+    </div>
+
+    <p class="footer-disclaimer">
+    Created by a DLSU student. <br>
+    This tool is not officially affiliated with St. Louise University Baguio, Accuracy is not guaranteed
+</p>
+
+</footer>
+
+    <script src="Logic.js"></script>
+</body>
+</html>

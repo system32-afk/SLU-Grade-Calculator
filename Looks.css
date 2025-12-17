@@ -1,0 +1,346 @@
+.hammersmith-one-regular {
+  font-family: "Hammersmith One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+button{
+    cursor: pointer;
+}
+
+@keyframes buttonFlash {
+    0% {
+        box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+    }
+    50% {
+        box-shadow: 0 0 12px rgba(255, 255, 255, 0.8);
+    }
+    100% {
+        box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+    }
+}
+
+button:active {
+    animation: buttonFlash 0.1s ease;
+    transform: scale(0.97);
+}
+
+button:hover {
+    filter: brightness(1.1);
+}
+
+
+
+
+#passing_calculator{
+    font-family: 'Hammersmith One';
+    margin: 40px auto;
+    width: 60rem;            /* responsive */
+    max-width: 60rem;      /* caps on large screens */
+    padding: 2rem;
+    border: 2px solid gray;
+    border-radius: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    margin-bottom: 25px;
+    
+}
+
+#passing-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 0.5fr 0.5fr;    
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+}
+
+.PC-Input {
+    border-radius: 0.6rem;
+    height: 3rem;
+    width: 15rem;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+#estimateBTN {
+    display: block;
+    margin: 20px auto 0 auto;
+
+    border-radius: 15px;
+    width: 200px;
+    height: 50px;
+    font-size: 30px;
+    font-weight: bold;
+    background-color: #73FF88;
+    color: white;
+    -webkit-text-stroke-width:  1px; /* Adjust the width of the stroke */
+    -webkit-text-stroke-color: rgb(0, 0, 0); /* Set the color of the stroke */
+}
+
+#title{
+    font-family: 'Hammersmith One';
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+    text-align: center;
+
+}
+
+#grade_paramaters {
+    font-family: 'Hammersmith One';
+    margin: 40px auto;
+    width: 60rem;            /* responsive */
+    max-width: 60rem;      /* caps on large screens */
+    padding: 2rem;         /* scales with zoom & DPI */
+    border: 2px solid gray;
+    border-radius: 50px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+
+#GP_GRID{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.GP_PARAM_Header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+#GP_Subheader{
+    font-size: 15px;
+    text-align: left;
+}
+#GP_Headers{
+    font-size: 15px;
+    text-align: left;
+}
+
+.GP_Params {
+    border: 2px solid gray;
+    border-radius: 25px;
+    padding: 20px;
+    
+    justify-content: center;   
+    align-items: center;
+    gap: 10px;                
+}
+
+
+
+
+.percents{
+    text-align: center;
+    border-radius: 15px;
+    height: 50px;
+    font-size: 15px;
+}
+
+.subcategory-input{
+    text-align: center;
+    border-radius: 10px;
+    height: 30px;
+}
+.subcategory{
+    padding-bottom: 10px;
+}
+
+.subcatName{
+    text-align: center;
+    border-radius: 10px;
+    height: 30px;
+}
+
+.delete-btn{
+    height: 40px;
+}
+
+.addSubCategory{
+    font-size: 20px;
+    background-color: #73ABFF;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+    width: 12rem;
+    color: white;
+    -webkit-text-stroke-width: 0.3px; /* Adjust the width of the stroke */
+    -webkit-text-stroke-color: rgb(0, 0, 0); /* Set the color of the stroke */
+    
+}
+
+.buttonContainer{
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+
+    
+}
+
+.RadioBtns{
+    margin: auto;
+    width: 50%;
+    text-align: center;
+}
+
+#Calculate-grades{
+     font-family: 'Hammersmith One';
+    margin: 40px auto;
+    width: 60rem;            /* responsive */
+    max-width: 60rem;      /* caps on large screens */
+    border: 2px solid gray;
+    border-radius: 50px;
+    padding-bottom: 5rem;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-top: 30px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3); /* Right, down, blurred, semi-transparent black */
+}
+
+#CAL_headers{
+    /* Old properties removed for clarity/replacement */
+    display: grid;
+    /* Defines 4 columns for Name, Type, Score, Total, plus a small column for the delete button */
+    grid-template-columns: 2fr 1.5fr 1fr 1fr 0.3fr;
+    gap: 1rem;
+    justify-items: center; /* Center the text in the grid cells */
+    font-size: 20px;
+}
+
+.Activity{
+    /* Old properties removed for clarity/replacement */
+    display: grid;
+    /* Defines 4 columns for Name, Type, Score, Total, plus a small column for the delete button */
+    grid-template-columns: 2fr 1.5fr 1fr 1fr 0.2fr;
+    gap: 10px; /* Adjust gap to fit your design */
+    justify-items: center; /* Center the text in the grid cells */
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.CAL-Input{
+    text-align: center;
+    border-radius: 10px;
+    height: 30px;
+    width: 70px;
+}
+
+
+#CAL-btnContainer{
+    display: flex;
+    justify-content: center; 
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    align-items: center; /* center horizontally */
+}
+
+#CAL-btnContainer button{
+    /* margin-top: 50px; */
+    border-radius: 10px;
+    
+}
+
+#addActivity{
+    width: 12rem;
+    height: 3rem;
+    font-size: 30px;
+    font-weight: bold;
+    background-color: #73ABFF;
+    color: white;
+    -webkit-text-stroke-width:  1px; /* Adjust the width of the stroke */
+    -webkit-text-stroke-color: rgb(0, 0, 0); /* Set the color of the stroke */
+}
+
+#Calculate{
+    width: 320px;
+    height: 70px;
+    font-size: 40px;
+    background-color: #73FF88;
+    color: white;
+    font-weight: bold;
+    -webkit-text-stroke-width: 1px; /* Adjust the width of the stroke */
+    -webkit-text-stroke-color: rgb(0, 0, 0); /* Set the color of the stroke */
+}
+
+#actName{
+    text-align: center;
+    border-radius: 10px;
+    height: 30px;
+    width: 200px;
+}
+
+.delete-btn{
+    border-radius: 100%;
+}
+
+
+#selectAct{
+    text-align: center;
+    border-radius: 10px;
+    height: 30px;
+    width: 150px;
+}
+
+#feedback-section {
+    margin-top: 80px;
+    padding: 40px;
+    background-color: #73ABFF;
+    color: #fff;
+    text-align: center;
+    border: 2px solid #333;
+    border-radius: 20px;
+}
+
+#feedback-section h1 {
+    font-family: "Hammersmith One", sans-serif;
+    margin-bottom: 10px;
+}
+
+#feedback-section p {
+    opacity: 0.8;
+    margin-bottom: 20px;
+}
+
+#userFeedback {
+    width: 80%;
+    max-width: 600px;
+    padding: 12px;
+    font-size: 14px;
+    border-radius: 6px;
+    border: none;
+    resize: vertical;
+    margin-bottom: 20px;
+}
+
+.feedback-actions {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.feedback-link {
+    text-decoration: none;
+    padding: 10px 18px;
+    border-radius: 6px;
+    background-color: #ffffff;
+    color: #73ABFF;
+    transition: all 0.2s ease;
+}
+
+.feedback-link:hover {
+    background-color: #444;
+}
+
+.footer-disclaimer {
+    margin-top: 25px;
+    font-size: 13px;
+    opacity: 0.6;
+    font-style: italic;
+}
