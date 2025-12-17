@@ -85,7 +85,10 @@ button:hover {
     width: 50%;
     padding: 10px;
     text-align: center;
+}
 
+#title h1 {
+    font-size: 3rem;
 }
 
 #grade_paramaters {
